@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* No scroll */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    background: white; /* Mengubah background header menjadi putih */
+    color: black; /* Mengubah warna teks menjadi hitam */
+    z-index: 1;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk pembatas */
+}
+
+.logo img {
+    width: 80px; /* Ukuran kecil yang sesuai */
+    height: auto; /* Menyesuaikan tinggi proporsional */
+    transition: width 0.3s; /* Animasi halus saat perubahan ukuran */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: black; /* Mengubah warna teks pada navbar menjadi hitam */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #555; /* Warna teks saat hover menjadi abu-abu gelap */
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.full-image {
+    background-image: url('maintenance.png'); /* Placeholder image */
+    background-size: cover;
+    background-position: center;
+    width: 95%;
+    height: 100vh;
+}
